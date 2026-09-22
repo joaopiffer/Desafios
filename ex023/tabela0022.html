@@ -13,12 +13,33 @@
         table {
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        caption {
+            background-color: lightgray;
+            padding: 5px;
+            border: 1px solid black;
+            font-weight: bold;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: rgb(226, 226, 226);
+        }
+
 
         th, td {
             border: 1px solid black;
-            text-align: center;
             padding: 5px;
+        }
+        .num {
+            text-align: right;
         }
 
         thead, tfoot {
@@ -33,27 +54,34 @@
     <h1>Uso de tabelas grandes</h1>
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>população</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px">População</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>45 919 049</td>
+                <td class="num">45 919 049</td>
             </tr>
             <tr>
-                <td
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio De Janeiro</td>
+                <td class="num">17 264 943</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
-                <td>0000</td>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>0000</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, hic dolorem! Saepe exercitationem cumque quas quidem voluptates officiis, maiores dolores nostrum eligendi esse suscipit accusantium neque consequatur accusamus atque! Debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eos iusto quisquam quos sequi esse, ea tempora est tempore a fuga omnis. A ipsa rem nisi. Id explicabo similique obcaecati? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus aliquam hic, corporis repellat perferendis ipsam quisquam deleniti atque ex veniam eos quaerat praesentium temporibus impedit at aperiam necessitatibus neque quasi.</p>
 </body>
 </html>
