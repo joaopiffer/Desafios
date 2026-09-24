@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            background-color: rgba(209, 207, 207, 0.808);
+            width: 250px;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: left;
+            margin-left: 10px;
+        }
+
+        input {
+            border-radius: 3px;
+        }
+        .botoes {
+            text-align: right;
+            padding-top: 10px;
+        }
+
+        .botao:hover {
+            background-color: rgb(109, 161, 226);
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iname">Nome:</label>
+            <input type="text" name="name" id="iname" required minlength="3" placeholder="Nome" size="15" autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Nota:</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" size="2" placeholder="Nota" step="0.1">
+        </p>
+        <p>
+            <label for="imes">Dia:</label>
+            <input type="date" name="mes" id="imes" required>
+        </p>
+        <p>
+            <label for="ihora">Horário da Prova:</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+        <p class="botoes">
+            <input type="submit" value="Enviar" class="botao">
+            <input type="reset" value="Limpar" class="botao">
+        </p>
+    </form>
+</body>
+</html>
