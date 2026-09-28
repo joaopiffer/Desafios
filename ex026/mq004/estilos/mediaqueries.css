@@ -2,15 +2,16 @@
 
 
 @media print {
-    body {
-        background-image: url(../imagens/back-print.jpg);
-
-    }
     #phone {display: none;}
     #tablet {display: none;}
     #pc {display: none;}
     #tv {display: none;}
     #print {display: block;}
+
+    main::after {
+        content: "N impressão não sai a cor de fundo!";
+    }
+
 }
 
 @media screen and (min-width:618px) and (max-width:992px) {
