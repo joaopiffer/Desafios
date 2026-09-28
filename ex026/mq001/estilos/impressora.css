@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* Estilo para Impressora*/
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5em;
+}
+
+menu {
+    display: none;
+}
+
+article h2 {
+    text-align: center;
+   
+}
+
+article p {
+    text-indent: 10px;
+}
+
+article::after {
+    content: 'Esse artigo foi impresso através do site CursoEmVideo.com';
+}
+
