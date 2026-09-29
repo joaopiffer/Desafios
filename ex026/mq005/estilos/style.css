@@ -14,11 +14,13 @@ body {
 header {
     background-color: gray;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 40px;
+    margin-bottom: 0px;
 }
 
 h1 {
     font-size: 2em;
+    padding-bottom: 30px;
 }
 
 #burguer {
@@ -34,8 +36,9 @@ h1 {
     color: black;
 }
 
-menu > ul {
+menu {
     display: none;
+    padding-bottom: 7px;
 }
 
 menu ul {
@@ -61,14 +64,15 @@ menu li:hover {
 
 main {
     
-    max-width: 900px;
+    max-width: 550px;
     background-color: rgb(231, 231, 231);
     margin: auto;
-    margin-top: 10px;
     padding: 10px;
     text-align: justify;
     text-indent: 10px;
     line-height: 1.32em;
+    border-radius: 5px;
+    margin-top: 0px;
 }
 
 p {
